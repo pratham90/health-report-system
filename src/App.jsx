@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Signup from "./components/signup";
 import { Doctors, Home, About, Services, News,Contact } from "./components";
 import './App.css'
@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    
+    <BrowserRouter basename="/health-report-system">
       <Routes>
         {/* Signup Page as Home Page */}
         <Route path="/" element={<Signup />} />
@@ -19,6 +19,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         
       </Routes>
+      </BrowserRouter>
   
   );
 }
