@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./components/signup";
-import { Doctors, Home, About, Services, News,Contact } from "./components";
+import { Doctors, Home, About, Services, News,Contact,Appointment } from "./components";
 import './App.css'
 
 
@@ -15,8 +15,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services/>} />
         <Route path="/news" element={<News />} />
-        <Route path="/doctors" element={<Doctors/>} />
+        <Route path="/Doctors" element={<Doctors/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/appointment" element={<Appointment/>} />
         
       </Routes>
   
