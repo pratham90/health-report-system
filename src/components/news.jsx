@@ -1,7 +1,8 @@
 import React from 'react'
 import { Nav, Footer } from "../components"
-import Img from "../assets/38638.jpg"
+import Img from "../assets/newbg.webp"
 import { categories,RecentPost, Category } from "./CompoFunc";
+import Article from "../assets/article.jpg"
 
 
 const recentPosts = [
@@ -23,15 +24,15 @@ const recentPosts = [
 
 const news = () => {
   return (
-    <div>
+    <div className='bg-[#E5F5E0]'>
       <Nav />
       <div className="container mx-auto ">
         {/* Hero Section */}
         <div
-          className="relative bg-cover bg-center h-[400px] flex items-center justify-center text-white"
+          className="relative bg-cover bg-center h-[550px] flex items-center justify-center mx-10 mt-5 border-none rounded-xl text-white"
           style={{ backgroundImage: `url(${Img})` }}
         >
-          <div className="absolute inset-0 bg-amber-50/30"></div>
+          {/* <div className="absolute inset-0 bg-amber-50/30"></div> */}
           <h1 className="relative text-3xl md:text-5xl font-bold text-center px-4 text-black">
             A passion for putting patients first.
           </h1>
@@ -40,8 +41,8 @@ const news = () => {
         {/* Blog Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10 px-15">
           {/* Main Blog Content */}
-          <div className="lg:col-span-2">
-            <img src={Img} alt="Doctors" className="w-full rounded-lg" />
+          <div className="lg:col-span-2 my-5">
+            <img src={Article} alt="Doctors" className="w-full h-120 rounded-lg" />
             <p className="text-gray-700 mt-10 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare.
               Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim sit amet.
@@ -62,14 +63,14 @@ const news = () => {
               <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400">
                 ← Previous Article
               </button>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+              <button className="hover:bg-[#8eca7c] bg-[#b4e1a7] cursor-pointer text-black px-4 py-2 rounded-lg ">
                 Next Article →
               </button>
             </div>
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <div className="space-y-6 my-6">
             {/* Search Box */}
             <div className="relative">
               <input

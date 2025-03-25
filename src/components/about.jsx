@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nav, Footer } from "../components"
 import doc from "../assets/homeimage.png"
-import IMg from "../assets/38638.jpg"
+import IMg from "../assets/about.jpg"
 const features = [
   "A Passion for Healing",
   "5-Star Care",
@@ -35,11 +35,11 @@ const about = () => {
   // Features Section
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-[#E5F5E0] ">
       <Nav />
     
        <div
-      className="relative bg-cover bg-center h-[400px] flex items-center justify-center text-white"
+      className="relative bg-cover bg-center h-[400px] flex items-center justify-center text-white mx-10 mt-5 border-none rounded-xl"
       style={{ backgroundImage: `url(${IMg})`, backgroundSize: "cover", backgroundPosition: "center" , opacity:"50"}}  >
       {/* Overlay to darken the background for better readability */}
       <div className="absolute inset-0   bg-amber-50/40"></div>
@@ -90,7 +90,7 @@ const about = () => {
       </div>
 
       {/* Quote Section */}
-      <div className="bg-blue-900 text-white py-12 mx-15 text-center">
+      <div className="bg-[#74C476]  text-black py-12 mx-15 text-center">
         <p className="text-lg italic max-w-2xl mx-auto">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           placerat scelerisque felis vitae tortor augue."
@@ -113,7 +113,7 @@ const about = () => {
                 className="w-full  h-40 object-cover rounded-md"
               />
               <h3 className="text-lg font-bold mt-4">{org.name}</h3>
-              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+              <button className="mt-4 px-4 py-2 bg-[#b4e1a7] text-black rounded-md hover:bg-[#8eca7c]">
                 View Profile
               </button>
             </div>

@@ -2,11 +2,11 @@ import React from "react";
 
 const footer = () => {
   return (
-    <footer className="bg-[#1a2a5c] text-white py-10 px-5">
+    <footer className=" bg-[#a8ee92] text-gray-950 py-10 px-5">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 grid-cols-1 gap-8">
         {/* Branding */}
         <div>
-          <h2 className="text-xl font-bold text-blue-300">MEDIN</h2>
+          <h2 className="text-xl  text-black font-bold">MEDIN</h2>
           <p className="mt-2 text-sm">Leading the Way in Medical Excellence, Trusted Care.</p>
         </div>
 
@@ -40,7 +40,7 @@ const footer = () => {
               placeholder="Enter your email address" 
               className="w-full p-2 text-gray-800 outline-none"
             />
-            <button className="bg-blue-500 text-white px-3 py-2 rounded-md">➤</button>
+            <button className=" bg-[#85cf71] cursor-pointer text-white px-3 py-2 rounded-md">➤</button>
           </div>
         </div>
       </div>

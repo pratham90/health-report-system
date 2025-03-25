@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Nav from './navbar';
-import Ani from "./CanvasImage"
-import Sec from "./section"
-import Footer from "./footer"
+import Nav from "./navbar";
+import Ani from "./CanvasImage";
+import Sec from "./section";
+import Footer from "./footer";
 
 const Home = () => {
   return (
-    <div>
-      <Nav/>
-  
-  <Sec/>
-  <Footer/>
-    </div>
-  )
-}
+    <div className="bg-[#E5F5E0] ">
+      <Nav />
 
-export default Home
+      <Sec />
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;

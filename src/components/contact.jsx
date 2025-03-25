@@ -1,6 +1,6 @@
 import React from 'react'
 import {Nav,Footer} from "../components"
-import Img from "../assets/38638.jpg"
+import Img from "../assets/contactbg.avif"
 import GoogleMapComponent from "./GoogleMapComponent";
 import { ContactCard } from './CompoFunc';
 
@@ -11,28 +11,28 @@ const contactDetails = [
     title: "EMERGENCY",
     icon: "📞",
     details: ["(237) 681-812-255", "(237) 666-331-894"],
-    bgColor: "bg-blue-100",
+    bgColor: "bg-[#b4e1a7] ",
   },
   {
     id: 2,
     title: "LOCATION",
     icon: "📍",
     details: ["0123 Some place", "9876 Some country"],
-    bgColor: "bg-blue-900 text-white",
+    bgColor: "bg-green-900 text-white",
   },
   {
     id: 3,
     title: "EMAIL",
     icon: "📧",
     details: ["flidineesoso@gmail.com", "mybestudios@gmail.com"],
-    bgColor: "bg-blue-100",
+    bgColor: "bg-[#b4e1a7]",
   },
   {
     id: 4,
     title: "WORKING HOURS",
     icon: "⏰",
     details: ["Mon-Sat: 09:00-20:00", "Sunday Emergency only"],
-    bgColor: "bg-blue-100",
+    bgColor: "bg-[#b4e1a7]",
   },
 ];
 
@@ -40,17 +40,17 @@ const contactDetails = [
 
 const contact = () => {
   return (
-    <div>
+    <div className="bg-[#E5F5E0]">
       <Nav/>
-      <div className="container mx-auto ">
+      <div className="container mx-auto  ">
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[400px] flex items-center justify-center text-white"
+        className="relative bg-cover bg-center h-[550px] flex items-center justify-center text-white mx-10 mt-5 border-none rounded-xl"
         style={{ backgroundImage: `url(${Img})` }}
       >
-        <div className="absolute inset-0 bg-amber-50/40"></div>
+        <div className="absolute inset-0 bg-amber-50/20"></div>
         <h1 className="relative text-3xl md:text-5xl font-bold text-center text-black">
-          Our Contacts
+          CONTACT US
         </h1>
       </div>
 
@@ -62,7 +62,7 @@ const contact = () => {
       {/* Contact Form & Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-15 py-10">
         {/* Contact Form */}
-        <div className="lg:col-span-2 bg-blue-900 text-white p-6 rounded-lg shadow-md">
+        <div className="lg:col-span-2  bg-[#40842d]  font-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
           <form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -88,7 +88,7 @@ const contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-white text-blue-900 font-semibold py-2 rounded-lg hover:bg-gray-200 transition"
+              className="w-full bg-white text-green-900 font-semibold py-2 rounded-lg hover:bg-gray-200 transition"
             >
               SUBMIT
             </button>

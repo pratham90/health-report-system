@@ -1,24 +1,24 @@
 import React from 'react'
 import { Nav, Footer } from "../components"
-import Img from "../assets/38638.jpg"
+import Img from "../assets/appointmentbg.jpg"
 import { formFields, scheduleHours } from "./CompoFunc"
 
 
 
 const appointment = () => {
     return (
-        <div>
+        <div className='bg-[#E5F5E0]'>
             <Nav />
-            <div className="min-h-screen bg-gray-100 ">
+            <div className="min-h-screen bg-[#E5F5E0]  ">
                 {/* Header Section */}
                 <div
-                    className="relative bg-cover bg-center h-[400px] flex items-center justify-center text-white"
+                    className="relative bg-cover bg-center h-[550px] flex items-center justify-center mx-10 mt-5 border-none rounded-xl text-white"
                     style={{ backgroundImage: `url(${Img})` }}
                 >
-                <div className="absolute inset-0 bg-amber-50/30"></div>
+                <div className="absolute inset-0 bg-amber-50/20"></div>
                 <div className='flex flex-col justify-center items-center text-black z-20'>
-                    <h2 className="text-3xl font-bold">Book an Appointment</h2>
-                    <p className="mt-2 text-black">
+                    <h2 className="text-3xl font-extrabold">Book an Appointment</h2>
+                    <p className="mt-2 text-black  ">
                         Schedule a consultation with our expert doctors.
                     </p>
                     </div>
@@ -27,7 +27,7 @@ const appointment = () => {
                 {/* Main Content */}
                 <div className="container mx-auto mt-10 grid gap-8 md:grid-cols-2 md:px-15 md:pb-8 p-2">
                     {/* Booking Form */}
-                    <div className="bg-blue-900 text-white md:p-6 rounded-lg shadow-lg ">
+                    <div className="bg-[#40842d]  text-black md:p-6 rounded-lg shadow-lg ">
                         <h3 className="text-xl font-semibold mb-4 pl-3 pt-2">Book an Appointment</h3>
                         <form className="grid gap-4">
                             {formFields.map((field, index) => (
@@ -61,7 +61,7 @@ const appointment = () => {
                             ))}
                             <button
                                 type="submit"
-                                className="w-full bg-white text-blue-900 font-bold py-3 rounded-lg mt-4  hover:bg-gray-200"
+                                className="w-full bg-white text-green-900 font-bold py-3 rounded-lg mt-4  hover:bg-green-200"
                             >
                                 SUBMIT
                             </button>
@@ -69,7 +69,7 @@ const appointment = () => {
                     </div>
 
                     {/* Schedule Hours */}
-                    <div className="bg-blue-900 text-white p-6 rounded-lg h-120 shadow-lg">
+                    <div className="bg-[#40842d] text-black p-6 rounded-lg h-120 shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Schedule Hours</h3>
                         <ul>
                             {scheduleHours.map((item, index) => (
@@ -81,7 +81,7 @@ const appointment = () => {
                         </ul>
                         <div className="mt-6 text-center">
                             <p className="font-bold text-lg">Emergency</p>
-                            <p className="text-gray-300">(237) 681-812-255</p>
+                            <p className="text-gray-900">(237) 681-812-255</p>
                         </div>
                     </div>
                 </div>

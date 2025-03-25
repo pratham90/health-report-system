@@ -7,6 +7,8 @@ import Contact from "./contact.jsx";
 import Nav from "./navbar.jsx";
 import Footer from "./footer.jsx";
 import Appointment from "./appointment.jsx";
+import Signup from "./signup.jsx";
+
 
 // Named exports instead of default
-export { Doctors, Home, About, Services, News,Contact,Nav, Footer,Appointment };
+export { Doctors, Home, About, Services, News,Contact,Nav, Footer,Appointment,Signup };
