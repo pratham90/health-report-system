@@ -72,32 +72,32 @@ const Navbar = () => {
         </div>
       </div>
       <motion.div
-        className={`md:hidden flex flex-col bg-[#afed9c]/90 text-black text-center absolute my-2 mx-5 rounded-xl top-12 left-0 w-135 py-5 z-50 ${
-          open ? "block" : "hidden"
-        }`}
-        initial={{ y: "100%" }}
-        animate={{ y: open ? "0%" : "-100%" }}
-        transition={{ duration: 0.5 }}
-      >
-        <Link className="  py-2 " to="/home" onClick={() => setOpen(false)}>
-          Home
-        </Link>
-        <Link className="  py-2" to="/about" onClick={() => setOpen(false)}>
-          About Us
-        </Link>
-        <Link className="  py-2" to="/services" onClick={() => setOpen(false)}>
-          Services
-        </Link>
-        <Link className="  py-2" to="/Doctors" onClick={() => setOpen(false)}>
-          Doctors
-        </Link>
-        <Link className="  py-2" to="/news" onClick={() => setOpen(false)}>
-          News
-        </Link>
-        <Link className="  py-2" to="/contact" onClick={() => setOpen(false)}>
-          Contact
-        </Link>
-      </motion.div>
+  className={`md:hidden flex flex-col bg-[#afed9c]/90 text-black text-center absolute top-14 left-1/2 transform -translate-x-1/2 w-full max-w-[250px] px-4 py-6 rounded-xl shadow-lg z-50 ${
+    open ? "block" : "hidden"
+  }`}
+  initial={{ y: "-100%", opacity: 0 }}
+  animate={{ y: open ? "0%" : "-100%", opacity: open ? 1 : 0 }}
+  transition={{ duration: 0.5, ease: "easeInOut" }}
+>
+  {[
+    { name: "Home", path: "/home" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Doctors", path: "/Doctors" },
+    { name: "News", path: "/news" },
+    { name: "Contact", path: "/contact" },
+  ].map((item) => (
+    <Link
+      key={item.path}
+      className="py-3 text-lg font-semibold transition-colors duration-200 hover:text-white hover:bg-[#8cd574] rounded-lg"
+      to={item.path}
+      onClick={() => setOpen(false)}
+    >
+      {item.name}
+    </Link>
+  ))}
+</motion.div>
+
     </>
   );
 };
