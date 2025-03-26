@@ -77,7 +77,7 @@ const Navbar = () => {
           )}
         </div>
         <motion.div
-          className={`md:hidden flex flex-col bg-[#afed9c]/90 text-black text-center absolute top-14 left-1/2 transform -translate-x-1/2 w-full max-w-[250px] sm:max-w-[600px] px-4 py-6 rounded-xl shadow-lg z-50 ${
+          className={`md:hidden flex flex-col bg-[#afed9c]/90 text-black text-center absolute top-14 left-1/2 transform -translate-x-1/2 w-full max-w-[350px] sm:max-w-[600px] px-4 py-6 rounded-xl shadow-lg z-50 ${
             open ? "block" : "hidden"
           }`}
           initial={{ y: "-100%", opacity: 0 }}
