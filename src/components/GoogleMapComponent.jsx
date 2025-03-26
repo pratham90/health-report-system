@@ -6,13 +6,13 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 22.7217, // Latitude for Indore Airport
-  lng: 75.8011, // Longitude for Indore Airport
+  lat: 22.7217,
+  lng: 75.8011,
 };
 
 const GoogleMapComponent = () => {
   return (
-    <LoadScript  googleMapsApiKey="AIzaSyCFTiEQmBrD3tT8s2s9kFemA-6ktONKlwE">
+    <LoadScript googleMapsApiKey="AIzaSyCFTiEQmBrD3tT8s2s9kFemA-6ktONKlwE">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
         <Marker position={center} />
       </GoogleMap>
