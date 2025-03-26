@@ -15,7 +15,7 @@ const Navbar = () => {
     gsap.from(".nav-items", {
       y: -50,
       duration: 1,
-      delay: 0.5,
+      delay: 1.5,
     });
   });
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="nav  bg-[#E5F5E0]  h-12 justify-between xl:justify-around  lg:px-10 md:h-15 px-5 md:px-5 py-5 items-center text-black flex ">
         <div className="md:hidden flex  items-center">
           <FontAwesomeIcon
-            className="text-amber-50 h-6 w-6 cursor-pointer"
+            className="text-black h-6 w-6 cursor-pointer"
             icon={open ? faTimes : faBars} // Toggle between faBars & faTimes
             onClick={() => setOpen(!open)}
           />
@@ -59,7 +59,7 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 nav-items">
             {isLoggedIn ? (
           <Link to="/appointment" className="btn bg-gradient-to-r from-[#9beb9c] to-[#51ec99] rounded-3xl px-4 py-2 text-black ">
             Appointment

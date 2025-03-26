@@ -15,15 +15,16 @@ const section = () => {
     useGSAP(()=>{
         gsap.from(".img",{
             x:-1000,
-            duration:1,
+            duration:2,
+            delay:1.5,
             opacity:0,
             
         }
         )
-        gsap.from(".leftbox",{
-            rotate:60,
-            scale:80,
-            duration:0.8,
+      
+        gsap.from(".sec",{
+            y:-10000,
+            duration:1.5,
             // repeat:-1,
             
         }
@@ -31,9 +32,9 @@ const section = () => {
     })
     return (
       <div className="bg-[#E5F5E0]">
-      <section className="relative w-full h-screen flex flex-col items-center justify-center text-center px-6 lg:px-16 bg-gradient-to-l my-2 from-[#c0e1b6] to-[#93d67e] overflow-hidden">
+      <section className="sec relative w-full md:h-screen h-150 flex flex-col items-center justify-center text-center px-6 lg:px-16 bg-gradient-to-l my-2 from-[#c0e1b6] to-[#93d67e] overflow-hidden">
         {/* Main Content */}
-        <div className="max-w-4xl">
+        <div className=" img max-w-4xl">
           <h3 className="text-lg text-gray-700 uppercase tracking-widest">
             HEALTH DIAGNOSIS
           </h3>
@@ -44,7 +45,7 @@ const section = () => {
               <motion.span
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
-                transition={{ duration: 1, ease: "easeInOut" }}
+                transition={{ duration: 4, ease: "easeInOut" }}
                 className="absolute bottom-0 left-0 h-1 bg-green-500"
               />
             </span>
@@ -63,23 +64,23 @@ const section = () => {
             className="absolute top-10 left-20 w-55 rounded-lg shadow-lg"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3, type: "spring" }}
+            transition={{ duration: 1, delay:2, type: "spring" }}
           />
           <motion.img
             src={Img2}
             alt="Frame 2"
-            className="absolute top-20 right-40 w-72 rounded-lg shadow-lg"
+            className="absolute top-15 right-40 w-62 rounded-lg shadow-lg"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5, type: "spring" }}
+            transition={{ duration: 1, delay: 1.8, type: "spring" }}
           />
           <motion.img
             src={Img3}
             alt="Frame 3"
-            className="absolute bottom-20 left-40 w-36 rounded-lg shadow-lg"
+            className="absolute bottom-20 left-40 w-46 h-35 rounded-lg shadow-lg"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.7, type: "spring" }}
+            transition={{ duration: 1, delay: 1.9, type: "spring" }}
           />
           <motion.img
             src={Img4}
@@ -87,7 +88,7 @@ const section = () => {
             className="absolute bottom-20 right-40 w-50 rounded-lg shadow-lg"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: -20, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.7, type: "spring" }}
+            transition={{ duration: 1, delay: 2.2, type: "spring" }}
           />
         </div>
       </section>
