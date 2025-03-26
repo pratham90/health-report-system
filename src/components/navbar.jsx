@@ -72,11 +72,11 @@ const Navbar = () => {
         </div>
       </div>
       <motion.div
-        className={`md:hidden flex flex-col bg-blue-400/90 text-white text-center absolute top-12 left-0 w-full py-5 z-50 ${
+        className={`md:hidden flex flex-col bg-[#afed9c]/90 text-black text-center absolute my-2 mx-5 rounded-xl top-12 left-0 w-135 py-5 z-50 ${
           open ? "block" : "hidden"
         }`}
-        initial={{ x: "100%" }}
-        animate={{ x: open ? "0%" : "-100%" }}
+        initial={{ y: "100%" }}
+        animate={{ y: open ? "0%" : "-100%" }}
         transition={{ duration: 0.5 }}
       >
         <Link className="  py-2 " to="/home" onClick={() => setOpen(false)}>
